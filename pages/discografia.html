@@ -9,6 +9,11 @@
 			href="../assets/cropped-n_icon-180x180.png"
 			type="image/x-icon"
 		/>
+		<!--Boostrap-->
+		<link
+			rel="stylesheet"
+			href="../libraries/Bosstrap/css/bootstrap.min.css"
+		/>
 		<link rel="stylesheet" href="../css/style.css" />
 		<!--Animate.css-->
 		<link
@@ -22,36 +27,61 @@
 		<!-- Header -->
 		<header>
 			<!-- Navigation bar -->
-			<nav class="navigation">
-				<img
-				class="animate__animated animate__backInLeft logoImg"
-					src="../assets/narnia logo.png"
-					alt="logoNarnia"
-				/>
-
-				<ul>
-					<li>
-						<a href="../index.html">Biografía</a>
-					</li>
-
-					<li>
-						<a href="#">Discografía</a>
-					</li>
-
-					<li>
-						<a href="./tours.html">Tours</a>
-					</li>
-
-					<li>
-						<a href="./videos.html">Videos</a>
-					</li>
-
-					<li>
-						<a href="./contacto.html">Contacto</a>
-					</li>
-				</ul>
-				<div class="menuBar">
-					<i class="fa-solid fa-bars"></i>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<div class="navbar-brand">
+						<img
+							src="../assets/narnia logo 2.png"
+							alt="narniaLogo"
+							class="d-inline-block align-text-top animate__animated animate__backInLeft logoImg"
+						/>
+					</div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavAltMarkup"
+						aria-controls="navbarNavAltMarkup"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarNavAltMarkup"
+					>
+						<ul class="navbar-nav mx-auto">
+							<li>
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="../index.html"
+									>Biografía</a
+								>
+							</li>
+							<li>
+								<a class="nav-link active" href="#"
+									>Discografía</a
+								>
+							</li>
+							<li>
+								<a class="nav-link" href="./tours.html"
+									>Tours</a
+								>
+							</li>
+							<li>
+								<a class="nav-link" href="./videos.html"
+									>Videos</a
+								>
+							</li>
+							<li>
+								<a class="nav-link" href="./contacto.html"
+									>Contacto</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</header>
@@ -221,5 +251,7 @@
 			src="https://kit.fontawesome.com/0597f5fbf9.js"
 			crossorigin="anonymous"
 		></script>
+		<!--Boostrap-->
+		<script src="../libraries/Bosstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>
