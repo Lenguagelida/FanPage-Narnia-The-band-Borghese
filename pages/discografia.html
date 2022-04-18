@@ -9,6 +9,11 @@
 			href="../assets/cropped-n_icon-180x180.png"
 			type="image/x-icon"
 		/>
+		<!--Boostrap-->
+		<link
+			rel="stylesheet"
+			href="../libraries/Bosstrap/css/bootstrap.min.css"
+		/>
 		<link rel="stylesheet" href="../css/style.css" />
 		<!--Animate.css-->
 		<link
@@ -22,160 +27,424 @@
 		<!-- Header -->
 		<header>
 			<!-- Navigation bar -->
-			<nav class="navigation">
-				<img
-				class="animate__animated animate__backInLeft logoImg"
-					src="../assets/narnia logo.png"
-					alt="logoNarnia"
-				/>
-
-				<ul>
-					<li>
-						<a href="../index.html">Biografía</a>
-					</li>
-
-					<li>
-						<a href="#">Discografía</a>
-					</li>
-
-					<li>
-						<a href="./tours.html">Tours</a>
-					</li>
-
-					<li>
-						<a href="./videos.html">Videos</a>
-					</li>
-
-					<li>
-						<a href="./contacto.html">Contacto</a>
-					</li>
-				</ul>
-				<div class="menuBar">
-					<i class="fa-solid fa-bars"></i>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<div class="navbar-brand">
+						<img
+							src="../assets/narnia logo 2.png"
+							alt="narniaLogo"
+							class="d-inline-block align-text-top animate__animated animate__backInLeft logoImg"
+						/>
+					</div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavAltMarkup"
+						aria-controls="navbarNavAltMarkup"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarNavAltMarkup"
+					>
+						<ul class="navbar-nav mx-auto">
+							<li>
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="../index.html"
+									>Biografía</a
+								>
+							</li>
+							<li>
+								<a class="nav-link active" href="#"
+									>Discografía</a
+								>
+							</li>
+							<li>
+								<a class="nav-link" href="./tours.html"
+									>Tours</a
+								>
+							</li>
+							<li>
+								<a class="nav-link" href="./videos.html"
+									>Videos</a
+								>
+							</li>
+							<li>
+								<a class="nav-link" href="./contacto.html"
+									>Contacto</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</header>
 		<!-- Main -->
-		<h1>Discografía</h1>
-		<main class="mainDiscografia">
-			<div class="card">
-				<div class="cardImg">
-					<img src="../assets/Awakening.jpg" alt="awakeningCDCover" />
+		<main class="card-group justify-content-center">
+			<section class="row">
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+					<img
+						src="../assets/Awakening.jpg"
+						alt="awakeningCDCover"
+						class="card-img-top"
+					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>Awakening</h2>
+							<h3>Fecha de lanzamiento: 5 de Diciembre de 1998</h3>
+							<ol>
+								<li>Break the Chains</li>
+								<li>No More Shadows from the Past</li>
+								<li>The Return of Aslan (instrumental)</li>
+								<li>Heavenly Love</li>
+								<li>Time of Changes</li>
+								<li>The Awakening</li>
+								<li>Touch from You</li>
+								<li>Sign of the Time</li>
+							</ol>
+						</div>
+					</div>
 				</div>
-				<div class="cardText">
-					<h2>Awakening</h2>
-					<h3>Fecha de lanzamiento: 5 de Diciembre de 1998</h3>
-					<ol>
-						<li>Break the Chains</li>
-						<li>No More Shadows from the Past</li>
-						<li>The Return of Aslan (instrumental)</li>
-						<li>Heavenly Love</li>
-						<li>Time of Changes</li>
-						<li>The Awakening</li>
-						<li>Touch from You</li>
-						<li>Sign of the Time</li>
-					</ol>
-				</div>
-			</div>
-			<div class="card">
-				<div class="cardImg">
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
 					<img
 						src="../assets/Long live the king.jpg"
 						alt="longLiveTheKingCDCover"
+						class="card-img-top"
 					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>Long Live The King</h2>
+							<h3>Fecha de lanzamiento: 1 de Julio de 1999</h3>
+							<ol>
+								<li>Gates of Cair Paravel (Introduction)</li>
+								<li>Living Water</li>
+								<li>Shelter Through the Pain</li>
+								<li>The Mission</li>
+								<li>What You Give Is What You Get</li>
+								<li>The Lost Son</li>
+								<li>Long Live the King</li>
+								<li>Dangerous Game</li>
+								<li>Star over Bethlehem</li>
+								<li>Shadowlands (Outro)</li>
+							</ol>
+						</div>
+					</div>
 				</div>
-				<div class="cardText">
-					<h2>Long Live The King</h2>
-					<h3>Fecha de lanzamiento: 1 de Julio de 1999</h3>
-					<ol>
-						<li>Gates of Cair Paravel (Introduction)</li>
-						<li>Living Water</li>
-						<li>Shelter Through the Pain</li>
-						<li>The Mission</li>
-						<li>What You Give Is What You Get</li>
-						<li>The Lost Son</li>
-						<li>Long Live the King</li>
-						<li>Dangerous Game</li>
-						<li>Star over Bethlehem</li>
-						<li>Shadowlands (Outro)</li>
-					</ol>
-				</div>
-			</div>
-			<div class="card">
-				<div class="cardImg">
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
 					<img
 						src="../assets/The great fall.jpg"
 						alt="theGreatFallCDCover"
+						class="card-img-top"
 					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>The great fall</h2>
+							<h3>Fecha de lanzamiento: 1 de Julio de 2003</h3>
+							<ol>
+								<li>War Preludium</li>
+								<li>The Countdown Has Begun</li>
+								<li>Back from Hell</li>
+								<li>No Time to Lose</li>
+								<li>Innocent Blood</li>
+								<li>Ground Zero</li>
+								<li>Judgement Day</li>
+								<li>Desert Land</li>
+								<li>The Great Fall of Man</li>
+							</ol>
+						</div>
+					</div>
 				</div>
-				<div class="cardText">
-					<h2>The great fall</h2>
-					<h3>Fecha de lanzamiento: 1 de Julio de 2003</h3>
-					<ol>
-						<li>War Preludium</li>
-						<li>The Countdown Has Begun</li>
-						<li>Back from Hell</li>
-						<li>No Time to Lose</li>
-						<li>Innocent Blood</li>
-						<li>Ground Zero</li>
-						<li>Judgement Day</li>
-						<li>Desert Land</li>
-						<li>The Great Fall of Man</li>
-					</ol>
-				</div>
-			</div>
-			<div class="card">
-				<div class="cardImg">
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
 					<img
 						src="../assets/Desert land.jpg"
 						alt="desertLandCDCover"
+						class="card-img-top"
 					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>Desert Land</h2>
+							<h3>Fecha de lanzamiento: 1 de Julio de 2001</h3>
+							<ol>
+								<li>Inner Sanctum</li>
+								<li>The Witch and the Lion</li>
+								<li>Falling from the Throne</li>
+								<li>Revolution of Mother Earth</li>
+								<li>
+									The Light at the End of the Tunnel
+									(instrumental)
+								</li>
+								<li>Angels Are Crying</li>
+								<li>Walking the Wire</li>
+								<li>Misty Morning (instrumental)</li>
+								<li>Trapped in This Age</li>
+							</ol>
+						</div>
+					</div>
 				</div>
-				<div class="cardText">
-					<h2>Desert Land</h2>
-					<h3>Fecha de lanzamiento: 1 de Julio de 2001</h3>
-					<ol>
-						<li>Inner Sanctum</li>
-						<li>The Witch and the Lion</li>
-						<li>Falling from the Throne</li>
-						<li>Revolution of Mother Earth</li>
-						<li>
-							The Light at the End of the Tunnel (instrumental)
-						</li>
-						<li>Angels Are Crying</li>
-						<li>Walking the Wire</li>
-						<li>Misty Morning (instrumental)</li>
-						<li>Trapped in This Age</li>
-					</ol>
-				</div>
-			</div>
-			<div class="card">
-				<div class="cardImg">
+			</section>
+			<section class="row">
+					<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+						<img
+							src="../assets/Enter the gate.jpg"
+							alt="enterTheGateCDCover"
+							class="card-img-top"
+						/>
+						<div class="card-body">
+							<div class="card-text">
+								<h2>Enter the Gate</h2>
+								<h3>Fecha de lanzamiento: 21 de Abril de 2006</h3>
+								<ol>
+									<li>Into This Game</li>
+									<li>People of the Bloodred Cross</li>
+									<li>Another World</li>
+									<li>Show All the World</li>
+									<li>Enter the Gate</li>
+									<li>Take Me Home</li>
+									<li>This is My Life</li>
+									<li>Aiming Higher</li>
+									<li>The Man from Nazareth</li>
+									<li>Hymn to the North (Japanese Bonus track)</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+						<img
+							src="../assets/At-Short-Notice...-Live-In-Germany.jpg"
+							class="card-img-top"
+							alt="liveInGermanyCDCover"
+						/>
+						<div class="card-body">
+							<div class="card-text">
+								<h2>At Short Notice; Live In Germany</h2>
+								<h3>Fecha de lanzamiento: 1 de Julio de 2006</h3>
+								<ol>
+									<li>Introduction</li>
+									<li>Inner Sanctum</li>
+									<li>The Mission</li>
+									<li>The Countdown Has Begun</li>
+									<li>Back From Hell</li>
+									<li>No Time To Lose</li>
+									<li>Long Live the King</li>
+									<li>Living Water</li>
+									<li>Shelter Through The Pain</li>
+									<li>Dangerous Game</li>
+									<li>The Awakening</li>
+									<li>Break The Chains</li>
+									<li>The Witch And The Lion</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+						<img
+							src="../assets/Decade of confession.jpg"
+							class="card-img-top"
+							alt="decadeOfConfessionCDCover"
+						/>
+						<div class="card-body">
+							<div class="card-text">
+								<h2>At Short Notice&hellip; Live In Germany</h2>
+								<h3>Fecha de lanzamiento: 1 de Julio de 2007</h3>
+								<ol>
+									<li>In His Majesty's Service (Jerusalem cover)</li>
+									<li>Into This Game</li>
+									<li>Show All the World</li>
+									<li>Judgement Day</li>
+									<li>Innocent Blood</li>
+									<li>The Countdown Has Begun (live)</li>
+									<li>Back from Hell (live)</li>
+									<li>Inner Sanctum</li>
+									<li>The Witch &amp; the Lion</li>
+									<li>Revolution of Mother Earth</li>
+									<li>The Light at the End of the Tunnel</li>
+									<li>Trapped in This Age</li>
+									<li>Sunrise (Uriah Heep cover)</li>
+									<li>Gates of Cair Paravel</li>
+									<li>Living Water</li>
+									<li>The Mission</li>
+									<li>Shelter Through the Pain</li>
+									<li>Can't Get Enough of You</li>
+									<li>Dangerous Game</li>
+									<li>Long Live the King</li>
+									<li>No More Shadows from the Past</li>
+									<li>Heavenly Love</li>
+									<li>Break the Chains</li>
+									<li>Awakening (live)</li>
+									<li>Hymn to the North</li>
+									<li>Show All the World (Dance remix)</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+						<img
+							src="../assets/Course of a generation.jpg"
+							alt="courseOfAGenerationCDCover"
+							class="card-img-top"
+						/>
+						<div class="card-body">
+							<div class="card-text">
+								<h2>Course of a generation</h2>
+								<h3>Fecha de lanzamiento: 1 de Julio de 2007</h3>
+								<ol>
+									<li>Sail Around the World</li>
+									<li>When the Stars are Falling</li>
+									<li>Curse of a Generation</li>
+									<li>Scared</li>
+									<li>Kings Will Come</li>
+									<li>Rain</li>
+									<li>Armageddon</li>
+									<li>One Way to Freedom</li>
+									<li>Miles Away</li>
+									<li>Behind the Curtain</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="row">
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
 					<img
-						src="../assets/Enter the gate.jpg"
-						alt="enterTheGateCDCover"
+						src="../assets/Narnia 2016.jpg"
+						alt="courseOfAGenerationCDCover"
+						class="card-img-top"
 					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>Narnia</h2>
+							<h3>Fecha de lanzamiento: 16 de Septiembre de 2016</h3>
+							<ol>
+								<li>Reaching for the Top</li>
+								<li>I Still Believe</li>
+								<li>On The Highest Mountain</li>
+								<li>Thank You</li>
+								<li>One Way to the Promised Land</li>
+								<li>Messengers</li>
+								<li>Who Do You Follow?</li>
+								<li>Moving On</li>
+								<li>Set the World on Fire</li>
+							</ol>
+						</div>
+					</div>
 				</div>
-				<div class="cardText">
-					<h2>Enter the Gate</h2>
-					<h3>Fecha de lanzamiento: 21 de Abril de 2006</h3>
-					<ol>
-						<li>Into This Game</li>
-						<li>People of the Bloodred Cross</li>
-						<li>Another World</li>
-						<li>Show All the World</li>
-						<li>Enter the Gate</li>
-						<li>Take Me Home</li>
-						<li>This is My Life</li>
-						<li>Aiming Higher</li>
-						<li>The Man from Nazareth</li>
-						<li>Hymn to the North (Japanese Bonus track)</li>
-					</ol>
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+					<img
+						src="../assets/made in brazil.jpg"
+						alt="madeInBrazilCDCover"
+						class="card-img-top"
+					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>We Still Believe Made in Brazil</h2>
+							<h3>Fecha de lanzamiento: 1 de Septiembre de 2018</h3>
+							<ol>
+								<li>Inner Sanctum</li>
+								<li>The Mission</li>
+								<li>Reaching For The Top</li>
+								<li>Shelter Through The Pain</li>
+								<li>No More Shadows From The Past</li>
+								<li>I Still Believe</li>
+								<li>Messengers</li>
+								<li>Drum Solo</li>
+								<li>Guitar Solo</li>
+								<li>The Awakening</li>
+								<li>Long Live The King</li>
+								<li>Into This Game</li>
+								<li>Living Water</li>
+							</ol>
+						</div>
+					</div>
 				</div>
-			</div>
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+					<img
+						src="../assets/Long live the king re release.jpg"
+						alt="lonLiveTheKingReReleaseCDCover"
+						class="card-img-top"
+					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>Long Live The King (20th Anniversary Edition)</h2>
+							<h3>Fecha de lanzamiento: 30 de Agosto de 2019</h3>
+							<ol>
+								<li>Gates of Cair Paravel (Introduction)</li>
+								<li>Living Water</li>
+								<li>Shelter Through the Pain</li>
+								<li>The Mission</li>
+								<li>What You Give Is What You Get</li>
+								<li>Long Live the King</li>
+								<li>The Lost Son</li>
+								<li>Dangerous Game</li>
+								<li>Star over Bethlehem</li>
+								<li>Miracle (bonus track)</li>
+								<li>Can't Get Enough Of You (bonus track)</li>
+								<li>
+									Living Water (2017 version &ndash; bonus track
+									featuring Jens Johansson)
+								</li>
+								<li>Shadowlands (Outro)</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="card col-sm-12 col-md-2 col-lg-4 bg-transparent" style="width: 18rem">
+					<img
+						src="../assets/Soli deo gloria.jpg"
+						alt="soliDeoGloriaCDCover"
+						class="card-img-top"
+					/>
+					<div class="card-body">
+						<div class="card-text">
+							<h2>Soli Deo Gloria; 25 Years Compilation</h2>
+							<h3>Fecha de lanzamiento: 5 de Noviembre de 2021</h3>
+							<ol>
+								<li>A Crack in the Sky</li>
+								<li>You Are the Air That I Breathe</li>
+								<li>Has the River Run Dry?</li>
+								<li>MNFST</li>
+								<li>The War That Tore the Land</li>
+								<li>Reaching for the Top (Live in Brazil)</li>
+								<li>I Still Believe</li>
+								<li>On the Highest Mountain</li>
+								<li>Thank You</li>
+								<li>Sail Around the World</li>
+								<li>Scared</li>
+								<li>One Way to Freedom</li>
+								<li>Into This Game</li>
+								<li>People of the Blood Red Cross</li>
+								<li>Another World</li>
+								<li>Enter the Gate</li>
+								<li>Back from Hell (Live in Germany)</li>
+								<li>Inner Sanctum (Live in Brazil)</li>
+								<li>The Witch and the Lion</li>
+								<li>Falling from the Throne</li>
+								<li>Revolution of Mother Earth</li>
+								<li>
+									Living Water (2017 Version featuring Jens
+									Johansson)
+								</li>
+								<li>Shelter Through the Pain (Live in Brazil)</li>
+								<li>The Mission</li>
+								<li>Dangerous Game</li>
+								<li>Miracle</li>
+								<li>Long Live the King (Live in Brazil)</li>
+								<li>Break the Chains</li>
+								<li>
+									No More Shadows from the Past (Live in Brazil)
+								</li>
+								<li>The Awakening (Live in Brazil)</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<hr />
-		<!--Se pondran toda la discografia completa luego-->
 		<!-- Footer -->
 		<footer>
 			<p>Redes sociales de la banda:</p>
@@ -221,5 +490,7 @@
 			src="https://kit.fontawesome.com/0597f5fbf9.js"
 			crossorigin="anonymous"
 		></script>
+		<!--Boostrap-->
+		<script src="../libraries/Bosstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>
