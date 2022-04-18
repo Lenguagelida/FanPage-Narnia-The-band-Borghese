@@ -157,14 +157,8 @@ header ul li a:hover:after {
 
 /* Discografia Page */
 
-.mainDiscografia {
-	max-width: 100vw;
-	padding: 10px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	column-gap: 10px;
-	row-gap: 10px;
-	justify-items: center;
+.card-group{
+	margin:20px;
 }
 
 .cardImg {
@@ -172,23 +166,16 @@ header ul li a:hover:after {
 	height: auto;
 }
 
-.cardText {
-	font-family: "bebas";
-	color: #bbc5c8;
-	padding: 10px;
-	text-align: center;
-}
-
-h1 {
+.card-text {
 	font-family: "bebas";
 	color: #bbc5c8;
 	text-align: center;
-	font-size: 35px;
 }
 
 h3 {
 	font-style: italic;
 	font-weight: 100;
+	font-size: 15px;
 }
 
 /* Tours Page */
@@ -435,8 +422,5 @@ footer p {
 	}
 
 	/* Vista celular max 576px DISCOGRAFIA */
-
-	.mainDiscografia {
-		grid-template-columns: repeat(2, 1fr);
-	}
+	
 }
