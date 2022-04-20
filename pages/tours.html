@@ -84,60 +84,213 @@
 			</nav>
 		</header>
 		<!-- Main -->
-		<main class="mainTours">
-			<h2>Próximas fechas de conciertos:</h2>
+		<main class=" container mainTours">
 			<section class="tourSection">
-				<table class="tourTable">
-					<tr>
-						<th>Fecha</th>
-						<th>Lugar</th>
-						<th>Evento</th>
-						<th>Ticket</th>
-					</tr>
-					<tr>
-						<td>
-							Miercoles 8 de Junio del 2022, 21hs.
-							<a
-								href="https://narniatheband.com/tourdates/sweden-rock-festival-2022/"
-								>MAS INFO
-							</a>
-						</td>
-						<td>Sölvesborg, Suecia</td>
-						<td>Sweden Rock Festival</td>
-						<td>
-							<a href="https://www.swedenrock.com/"
-								>Reserva tu Ticket</a
-							>
-						</td>
-					</tr>
-					<!--Proximamente agregare mas eventos, debo averiguarlos-->
-				</table>
+				<div class="container mt-3">
+					<h2>Próximos tours:</h2>
+					<table
+						class="table table-dark table-borderless table-hover"
+					>
+						<thead>
+							<tr>
+								<th>Fecha</th>
+								<th>Lugar</th>
+								<th>Evento</th>
+								<th>Info</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Miércoles 8 de Junio, 2022.</td>
+								<td>Sölvesborg, Sweden</td>
+								<td>
+									Sweden Rock Festival
+								</td>
+								<td>
+									<a
+										href="https://narniatheband.com/tourdates/sweden-rock-festival-2022/"
+										class="btn btn-outline-light"
+										>Link</a
+									>
+								</td>
+								<td>
+									<a
+										href="https://www.swedenrock.com/"
+										class="btn btn-outline-light"
+									>
+										Ticket
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Martes 7 de Julio, 2022.</td>
+								<td>Halmstad</td>
+								<td>
+									Gullbranna Festival
+								</td>
+								<td>
+									N/A
+								</td>
+								<td>
+									<a
+										href="https://gullbrannafestivalen.com/biljetter/"
+										class="btn btn-outline-light"
+									>
+										Ticket
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Viernes 8 de Julio, 2022.</td>
+								<td>Risøya, Norway</td>
+								<td>
+									Skjærgårds Music & Mission Festival 2022
+								</td>
+								<td>
+									<a
+										href="https://narniatheband.com/tourdates/skjaergards-music-mission-festival-2022/"
+										class="btn btn-outline-light"
+										>Link</a
+									>
+								</td>
+								<td>
+									<a
+										href="https://sgmm.no/billetter/"
+										class="btn btn-outline-light"
+									>
+										Ticket
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</section>
-			<hr />
-			<h2>Conciertos pasados:</h2>
+
+			<div id="carruselTours"	class="carousel slide carousel-fade" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div
+						class="carousel-item active imgTour"
+						data-bs-interval="2000"
+					>
+						<img
+							src="../assets/Background/slider_narnia_live_2017_6 background.jpg"
+							class="d-block w-100"
+							alt="tour1"
+						/>
+					</div>
+					<div class="carousel-item imgTour" data-bs-interval="2000">
+						<img
+							src="../assets/Background/slider_narnia_live_2017_6 background 2.jpg"
+							class="d-block w-100"
+							alt="tour2"
+						/>
+					</div>
+					<div class="carousel-item imgTour" data-bs-interval="2000">
+						<img
+							src="../assets/Background/slider_narnia_live_2017_6 background3.jpg"
+							class="d-block w-100"
+							alt="tour3"
+						/>
+					</div>
+					<div class="carousel-item imgTour" data-bs-interval="2000">
+						<img
+							src="../assets/Background/slider_narnia_live_2017_6 background4.jpg"
+							class="d-block w-100"
+							alt="tour5"
+						/>
+					</div>
+					<div class="carousel-item imgTour" data-bs-interval="2000">
+						<img
+							src="../assets/Background/slider_narnia_live_2017_6 background5.jpg"
+							class="d-block w-100"
+							alt="tour6"
+						/>
+					</div>
+					<div class="carousel-item imgTour" data-bs-interval="2000">
+						<img
+							src="../assets/Background/slider_narnia_live_2017_6 background6.jpg"
+							class="d-block w-100"
+							alt="tour7"
+						/>
+					</div>
+				</div>
+			</div>
+
+
 			<section class="tourSection">
-				<table class="tourTable">
-					<tr>
-						<th>Fecha</th>
-						<th>Lugar</th>
-						<th>Evento</th>
-					</tr>
-					<tr>
-						<td>
-							Domingo 7 de Noviembre del 2021, 21hs.
-							<a
-								href="https://narniatheband.com/tourdates/de-verlichte-geest/"
-								>MAS INFO
-							</a>
-						</td>
-						<td>Roeselare, Bélgica</td>
-						<td>De Verlichte Geest</td>
-					</tr>
-				</table>
+				<div class="container mt-3">
+					<h2>Conciertos pasados:</h2>
+					<table class="table table-dark table-borderless table-hover">
+						<thead>
+							<tr>
+								<th>Fecha</th>
+								<th>Lugar</th>
+								<th>Evento</th>
+								<th>Info</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Domingo 7 de Noviembre del 2021</td>
+								<td>Roeselare, Bélgica</td>
+								<td>De Verlichte Geest</td>
+								<td>
+									<a href="https://narniatheband.com/tourdates/de-verlichte-geest/" class="btn btn-outline-light"
+									>Link</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Sábado 6 de Noviembre, 2021</td>
+								<td>Apeldoorn, The Netherlands</td>
+								<td>Brainstorm Fest </td>
+								<td>
+									<a href="https://narniatheband.com/tourdates/brainstorm-fest-2021/" class="btn btn-outline-light"
+									>Link</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Miércoles 9 de Junio, 2021</td>
+								<td>Sölvesborg, Sweden </td>
+								<td>Sweden Rock Festival </td>
+								<td>
+									<a href="https://narniatheband.com/tourdates/sweden-rock-festival-2021/" class="btn btn-outline-light"
+									>Link</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Miércoles 3 de Junio, 2020</td>
+								<td>Sölvesborg, Sweden </td>
+								<td>Sweden Rock Festival </td>
+								<td>
+									<a href="https://narniatheband.com/tourdates/sweden-rock-festival-2020/" class="btn btn-outline-light"
+									>Link</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Sábado 1 de Febrero, 2020</td>
+								<td>Gothenburg, Sweden  </td>
+								<td>Trädgår'n</td>
+								<td>
+									<a href="https://narniatheband.com/tourdates/narnia-pretty-maids-gothenburg/" class="btn btn-outline-light"
+									>Link</a>
+								</td>
+							</tr>
+							<tr>
+								<td>31 de Enero, 2020</td>
+								<td>Stockholm, Sweden </td>
+								<td>Fryshuset</td>
+								<td>
+									<a href="https://narniatheband.com/tourdates/narnia-pretty-maids-stockholm/" class="btn btn-outline-light"
+									>Link</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</section>
 		</main>
-		<hr />
-		<!-- Footer -->
 		<!-- Footer -->
 		<footer>
 			<p>Redes sociales de la banda:</p>
