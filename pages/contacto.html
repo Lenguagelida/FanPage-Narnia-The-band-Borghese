@@ -84,58 +84,72 @@
 			</nav>
 		</header>
 		<!--Main-->
-		<main class="mainContact">
-			<h3>
-				Aqui puedes contactarnos para consultas, sugerencias o mas
-				información de la banda.
-			</h3>
-			<section class="sectionForm">
-				<div class="form">
+		<main class="container-fluid mainContact">
+			<div class="row">
+				<div class="container col-sm-12 col-md-12 col-lg-6 formulary">
 					<form action="procesar.php" method="POST">
-						<div>
-							<label for="nombre">Nombre: </label>
-							<input
-								type="text"
-								name="nombre"
-								placeholder="Escribe tu nombre"
-							/>
-						</div>
-						<div>
-							<label for="email">Correo electrónico</label>
-							<input
-								type="text"
-								name="email"
-								required
-								placeholder="Escribe tu email"
-							/>
-						</div>
-						<div>
-							<label for="text"
-								>¿Quieres recibir el newsletter?</label
+						<section class="ContactForm">
+							<div class="row">
+								<div class="form-group col-sm-12 col-md-4">
+									<label for="nombre">Nombre:</label>
+									<input
+										type="text"
+										class="form-control"
+										id="nombre"
+										required
+									/>
+									<small class="form-text text-muted"
+										>Obligatorio</small
+									>
+								</div>
+								<div class="form-group col-sm-12 col-md-8">
+									<label for="email">Correo electrónico:</label>
+									<input
+										type="email"
+										class="form-control"
+										id="email"
+										required
+									/>
+									<small class="form-text text-muted"
+										>Obligatorio</small
+									>
+								</div>
+							</div>
+							<div class="form-group form-check">
+								<label class="form-check-label">
+									<input
+										class="form-check-input"
+										type="checkbox"
+									/>
+									¿Quieres recibir el newsletter?
+								</label>
+							</div>
+							<select
+								class="form-select"
+								aria-label="Disabled select example"
 							>
-							<input
-								type="checkbox"
-								name="newsletter"
-								id="newsletter"
-							/>
-						</div>
-						<div>
-							<select name="interesBanda" id="interesBanda">
-								<option value="none" selected disabled hidden>
-									Selecciona que es lo que mas te interesa de
-									la banda
+								<option selected>
+									Selecciona que es lo que mas te interesa de la
+									banda
 								</option>
-								<option value="merchandising">
-									Merchandising
-								</option>
-								<option value="tours">Tours</option>
-								<option value="futurosProyectos">
-									Futuros proyectos
-								</option>
+								<option value="1">Merchandising</option>
+								<option value="2">Futuros proyectos</option>
+								<option value="3">Tours</option>
 							</select>
-						</div>
-						<textarea name="comentario" id="comentario"></textarea>
-						<div>
+							<div class="form-floating comentarios">
+								<textarea
+									class="form-control"
+									placeholder="Escribe aqui:"
+									id="commentTextArea"
+								>
+								</textarea>
+								<label for="commentTextArea"
+									>Escribe algun comentario de lo que quieras
+									saber</label
+								>
+							</div>
+						</section>
+						<div class="botones">
 							<span><input type="submit" value="Enviar" /></span>
 							<span
 								><input type="reset" value="Borrar Formulario"
@@ -143,16 +157,74 @@
 						</div>
 					</form>
 				</div>
-				<div class="contactImg">
-					<img
-						src="../assets/foto_merch.jpg"
-						alt="imagenMerchandising"
-					/>
-					<!--PORBABLEMENTE SITUE UN CARRUSEL CON IMAGENES DE MERCHANDISSING EN VEZ DE UNA IMAGEN COMO LA DE ARRIBA-->
+
+				<div class="container col-sm-12 col-md-12 col-lg-6 carousel">
+					<div
+						id="carruselMerch"
+						class="carousel slide carousel-fade"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-inner">
+							<div
+								class="carousel-item active"
+								data-bs-interval="2000"
+							>
+								<img
+									src="../assets/foto_merch.jpg"
+									class="d-block w-100"
+									alt="merch1"
+								/>
+							</div>
+							<div class="carousel-item" data-bs-interval="2000">
+								<img
+									src="../assets/foto_merch2.jpg"
+									class="d-block w-100"
+									alt="merch2"
+								/>
+							</div>
+							<div class="carousel-item" data-bs-interval="2000">
+								<img
+									src="../assets/foto_merch3.jpg"
+									class="d-block w-100"
+									alt="merch3"
+								/>
+							</div>
+							<div class="carousel-item" data-bs-interval="2000">
+								<img
+									src="../assets/foto_merch4.jpg"
+									class="d-block w-100"
+									alt="merch4"
+								/>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carruselMerch"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carruselMerch"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
 				</div>
-			</section>
+			</div>
 		</main>
-		<hr />
 		<!-- Footer -->
 		<footer>
 			<p>Redes sociales de la banda:</p>
