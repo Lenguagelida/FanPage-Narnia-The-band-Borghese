@@ -1,0 +1,31 @@
+@import"font";
+
+footer{
+	background-image: url("../assets/Background/background 2.jpg");
+	background-size: contain;
+
+    p{
+        font-family: $font-general;
+        font-size: 25px;
+        color: black;
+        text-align: center;
+    }
+    .footerContainer{
+        display: flex;
+        justify-content: center;
+
+        span{
+            margin: 35px;
+            a{
+                img{
+                    width: 100%;
+                    height: auto;
+                    transition: all;
+                    &:hover{
+                        transform: scale(1.5, 1.5);
+                        }
+                }
+            }
+        }
+    }
+}
