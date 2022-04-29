@@ -1,6 +1,6 @@
 //Nagivation Bar:
 @import"colors";
-@import"font";
+
 
 .logoImg {
     height: 100px;
@@ -18,7 +18,7 @@ header ul{
             a{
                 position: relative;
                 text-decoration: none;
-                font-family: $font-general;
+                font-family: 'bebas';
                 font-size: 35px;
                 font-weight: lighter;
                 margin: 3px;
@@ -38,9 +38,4 @@ header ul{
                 }
             }
         }
-}
-
-
-.menuBar{
-        display: none;
 }

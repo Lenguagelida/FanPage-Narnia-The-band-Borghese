@@ -1,0 +1,28 @@
+/* Tours Page */
+
+.tourSection{
+	color: $color-font-1;
+}
+
+/*Mediaqueries Tours*/
+
+@media only screen and (max-width: 576px) {
+
+	.imgTour img{
+		height: 280px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.imgTour img{
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width: 992px){
+
+	.imgTour img{
+		height: 450px;
+	}
+}
