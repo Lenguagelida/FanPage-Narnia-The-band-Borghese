@@ -162,10 +162,10 @@ header ul li a:hover:after {
 }
 
 /*Mediaqueries Index */
-@media (min-width: 360px) and (max-width: 876px) {
+@media (min-width: 360px) and (max-width: 800px) {
   .sectionHome-1 {
     background-image: none;
-    height: 95vh;
+    height: 750px;
   }
   .sectionHome-1 .articleHome .background1 {
     display: block;
@@ -191,7 +191,7 @@ header ul li a:hover:after {
 
   .sectionHome-2 {
     background-image: none;
-    height: 270vh;
+    height: 2150px;
   }
   .sectionHome-2 .articleHome-1 .background2 {
     display: block;
@@ -208,10 +208,10 @@ header ul li a:hover:after {
     font-weight: 200;
   }
 }
-@media (min-width: 877px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
   .sectionHome-1 {
     background-image: none;
-    height: 110vh;
+    height: 900px;
   }
   .sectionHome-1 .articleHome .background1 {
     display: block;
@@ -237,7 +237,7 @@ header ul li a:hover:after {
 
   .sectionHome-2 {
     background-image: none;
-    height: 200vh;
+    height: 1500px;
   }
   .sectionHome-2 .articleHome-1 .background2 {
     display: block;
@@ -259,13 +259,13 @@ header ul li a:hover:after {
   .sectionHome-1 {
     background-size: auto;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 600px;
   }
 
   .sectionHome-2 {
     background-size: auto;
     background-repeat: no-repeat;
-    height: 150vh;
+    height: 1200px;
   }
 }
 /*Discografia*/
