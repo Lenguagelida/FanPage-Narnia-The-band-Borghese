@@ -39,3 +39,21 @@ header ul{
             }
         }
 }
+
+/*Mediaquieries NavBar*/
+
+@media (min-width:460px) and (max-width:876px){
+
+    .logoImg{
+        height: 90px;
+        width: 330px;
+        margin-left: 15px;
+    }
+    header ul{
+        li{
+            a{
+                font-size: 25px;
+            }
+        }
+    }
+}
