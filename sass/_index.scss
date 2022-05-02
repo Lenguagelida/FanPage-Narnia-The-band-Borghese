@@ -1,7 +1,7 @@
 /* Index Page */
     /*Main*/
 $pesoFuente:("baja": 200, "media": 500, "alta": bold);
-$tamañoFuente:("sm":15px, "md": 20px, "lg":23px);
+$tamañoFuente:("sm":15px, "md": 18px, "lg":23px);
 $tamañoTitulos:("sm":20px, "md": 30px, "lg":70px);
 
 @mixin fondoSections() {
@@ -96,11 +96,11 @@ $tamañoTitulos:("sm":20px, "md": 30px, "lg":70px);
 
 /*Mediaqueries Index */
 
-@media (min-width:460px) and (max-width:876px){
+@media (min-width:360px) and (max-width:800px){
     
     .sectionHome-1{
         background-image: none;
-        height: 55vh;
+        height: 750px;
 
         .articleHome{
             .background1{
@@ -117,11 +117,11 @@ $tamañoTitulos:("sm":20px, "md": 30px, "lg":70px);
                 font-weight: map-get($pesoFuente,baja);
             }
             p{
-                font-size: map-get($tamañoFuente,sm);
+                font-size: map-get($tamañoFuente,md);
                 font-weight: map-get($pesoFuente,baja);
             }
             .members{
-                font-size: map-get($tamañoFuente,sm);
+                font-size: map-get($tamañoFuente,md);
                 font-weight: map-get($pesoFuente,baja);
             }
         }
@@ -129,7 +129,7 @@ $tamañoTitulos:("sm":20px, "md": 30px, "lg":70px);
 
     .sectionHome-2{
         background-image: none;
-        height: 110vh;
+        height: 2150px;
 
         .articleHome-1{
             .background2{
@@ -143,18 +143,18 @@ $tamañoTitulos:("sm":20px, "md": 30px, "lg":70px);
                 font-weight: map-get($pesoFuente,baja);
             }
             p{
-                font-size: map-get($tamañoFuente,sm);
+                font-size: map-get($tamañoFuente,md);
                 font-weight: map-get($pesoFuente,baja);
             }
         }
     }
 }
 
-@media (min-width:877px) and (max-width:1200px){
+@media (min-width:801px) and (max-width:1200px){
     
     .sectionHome-1{
         background-image: none;
-        height: 72vh;
+        height: 900px;
 
         .articleHome{
             .background1{
@@ -183,7 +183,7 @@ $tamañoTitulos:("sm":20px, "md": 30px, "lg":70px);
 
     .sectionHome-2{
         background-image: none;
-        height: 128vh;
+        height: 1500px;
 
         .articleHome-1{
             .background2{
@@ -210,12 +210,12 @@ $tamañoTitulos:("sm":20px, "md": 30px, "lg":70px);
     .sectionHome-1{
         background-size:auto;
         background-repeat: no-repeat;
-        height: 45vh;
+        height: 600px;
     }
 
     .sectionHome-2{
         background-size:auto;
         background-repeat: no-repeat;
-        height: 90vh;
+        height: 1200px;
     }
 }
