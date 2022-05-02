@@ -44,6 +44,19 @@ header ul li a:hover:after {
   width: 100%;
 }
 
+/*Mediaquieries NavBar*/
+@media (min-width: 460px) and (max-width: 876px) {
+  .logoImg {
+    height: 90px;
+    width: 330px;
+    margin-left: 15px;
+  }
+
+  header ul li a {
+    font-size: 25px;
+  }
+}
+/*Index*/
 /* Index Page */
 /*Main*/
 .sectionHome-1 {
@@ -52,6 +65,7 @@ header ul li a:hover:after {
   background-position: center;
   overflow: hidden;
   position: relative;
+  height: 100vh;
   background-image: url("../assets/Background/background 5.jpg");
 }
 .sectionHome-1::before {
@@ -67,6 +81,9 @@ header ul li a:hover:after {
   flex-direction: column;
   position: absolute;
 }
+.articleHome .background1 {
+  display: none;
+}
 .articleHome h1 {
   color: #f2f6f7;
   text-align: center;
@@ -79,7 +96,7 @@ header ul li a:hover:after {
   color: #f2f6f7;
   text-align: center;
   font-family: "bebas";
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 500;
 }
 .articleHome p {
@@ -104,7 +121,6 @@ header ul li a:hover:after {
   overflow: hidden;
   position: relative;
   background-image: url("../assets/Background/background 3.jpg");
-  color: #bbc5c8;
 }
 .sectionHome-2::before {
   content: "";
@@ -119,6 +135,9 @@ header ul li a:hover:after {
   flex-direction: column;
   position: absolute;
 }
+.articleHome-1 .background2 {
+  display: none;
+}
 .articleHome-1 h1 {
   color: #f2f6f7;
   text-align: center;
@@ -131,7 +150,7 @@ header ul li a:hover:after {
   color: #f2f6f7;
   text-align: center;
   font-family: "bebas";
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 500;
 }
 .articleHome-1 p {
@@ -142,118 +161,147 @@ header ul li a:hover:after {
   font-weight: 200;
 }
 
-/*Mediaqueries Index A CORREGIR
-
-@media only screen and (max-width: 768px) {
-
-	.sectionHome-1 {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-	}
-
-	.articleHome {
-		grid-column: 1/7;
-		grid-row: 1/2;
-		margin: 0 auto;
-		padding: 10px;
-	}
-
-	.articleHome p {
-		font-size: 16px;
-		font-weight: 100;
-		margin: 5px;
-		padding: 10px;
-	}
-
-	.articleHome h2 {
-		font-size: 20px;
-		font-weight: 300;
-		text-align: center;
-	}
-
-	.articleHome h1 {
-		font-size: 35px;
-		font-weight: 600;
-		text-align: center;
-	}
-
-	.members {
-		font-weight: 200;
-		font-size: 16px;
-	}
-
-	.imgMain {
-		grid-column: 1/7;
-		grid-row: 2/3;
-		margin: 0 auto;
-    }
-}
-
-*/
-/* Biography Section 
-
-.sectionHome-2 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.imgSection {
-    grid-column: 1/7;
-    grid-row: 2/3;
+/*Mediaqueries Index */
+@media (min-width: 460px) and (max-width: 876px) {
+  .sectionHome-1 {
+    background-image: none;
+    height: 55vh;
+  }
+  .sectionHome-1 .articleHome .background1 {
+    display: block;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding: 10px;
-}
+    width: 100%;
+    object-fit: contain;
+  }
+  .sectionHome-1 .articleHome h1 {
+    font-size: 30px;
+  }
+  .sectionHome-1 .articleHome h2 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .sectionHome-1 .articleHome p {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .sectionHome-1 .articleHome .members {
+    font-size: 15px;
+    font-weight: 200;
+  }
 
-.imgSection2, .imgSection3 {
-    display: none;
+  .sectionHome-2 {
+    background-image: none;
+    height: 110vh;
+  }
+  .sectionHome-2 .articleHome-1 .background2 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+  }
+  .sectionHome-2 .articleHome-1 h2 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .sectionHome-2 .articleHome-1 p {
+    font-size: 15px;
+    font-weight: 200;
+  }
 }
+@media (min-width: 877px) and (max-width: 1200px) {
+  .sectionHome-1 {
+    background-image: none;
+    height: 72vh;
+  }
+  .sectionHome-1 .articleHome .background1 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+  }
+  .sectionHome-1 .articleHome h1 {
+    font-size: 70px;
+  }
+  .sectionHome-1 .articleHome h2 {
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .sectionHome-1 .articleHome p {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .sectionHome-1 .articleHome .members {
+    font-size: 20px;
+    font-weight: 200;
+  }
 
-.articleHome-1 {
-    grid-column: 1/7;
-    grid-row: 1/2;
-    justify-content: none;
+  .sectionHome-2 {
+    background-image: none;
+    height: 128vh;
+  }
+  .sectionHome-2 .articleHome-1 .background2 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+  }
+  .sectionHome-2 .articleHome-1 h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 15px;
+  }
+  .sectionHome-2 .articleHome-1 p {
+    font-size: 20px;
+    font-weight: 200;
+  }
 }
+@media (min-width: 1201px) and (max-width: 1800px) {
+  .sectionHome-1 {
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 45vh;
+  }
 
-.articleHome-1 p {
-    font-size: 16px;
-    font-weight: 100;
-    margin: 5px;
-    padding: 10px;
+  .sectionHome-2 {
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 90vh;
+  }
 }
-
-.articleHome-1 h1 {
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-}
-*/
-
+/*Discografia*/
 /* Discografia Page */
-.card-group {
+.tittle {
+  font-family: "bebas";
+  color: #f2f6f7;
+  text-align: center;
   padding: 10px;
 }
 
-.cardImg {
+.card-group {
+  padding: 10px;
+}
+.card-group .card .cardImg {
   width: 100%;
   height: auto;
 }
-
-.card-text {
+.card-group .card .card-text {
   font-family: "bebas";
   color: #bbc5c8;
   text-align: center;
 }
-
-h3 {
+.card-group .card .card-text h3 {
   font-style: italic;
   font-weight: 100;
   font-size: 15px;
+  text-align: center;
+}
+.card-group .card .card-text .accordion .accordion-header .accordion-button {
+  background-color: #0c151c;
+  font-size: 25px;
+  color: #bbc5c8;
 }
 
-
+/*Tours*/
 /* Tours Page */
 .tourSection {
   color: #bbc5c8;
@@ -275,7 +323,7 @@ h3 {
     height: 450px;
   }
 }
-
+/*Videos*/
 /* Videos Page */
 .mainVideos h2 {
   font-family: "bebas";
@@ -323,7 +371,7 @@ iframe {
     height: 280px;
   }
 }
-
+/*Contacto*/
 /* Contacto Page */
 .mainContact {
   padding: 15px;
@@ -395,13 +443,22 @@ footer .footerContainer span {
 }
 footer .footerContainer span a img {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: all;
 }
 footer .footerContainer span a img:hover {
   transform: scale(1.5, 1.5);
 }
 
+/*Mediaqueries Footer*/
+@media (min-width: 350px) and (max-width: 716px) {
+  footer p {
+    font-size: 17px;
+  }
+  footer .footerContainer span {
+    margin: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

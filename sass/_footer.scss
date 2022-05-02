@@ -17,7 +17,7 @@ footer{
             a{
                 img{
                     width: 100%;
-                    height: auto;
+                    height: 100%;
                     transition: all;
                     &:hover{
                         transform: scale(1.5, 1.5);
@@ -26,4 +26,20 @@ footer{
             }
         }
     }
+}
+
+/*Mediaqueries Footer*/
+
+@media (min-width:350px) and (max-width:716px){
+    footer{
+        p{
+            font-size: 17px;
+        }
+        .footerContainer{
+            span{
+                margin: 10px;
+            }
+        }
+    }
+    
 }
