@@ -1,50 +1,57 @@
 /* Videos Page */
 
-.mainVideos h2 {
+@mixin titleFormato() {
 	font-family: 'bebas';
 	color: $color-font-1;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 35px;
 	text-align: center;
 }
 
-.videos{
+@mixin videosDisposicion() {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
 }
 
-.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9{
-	justify-content: space-between;
-	flex: 50%;
+.mainVideos{
+
+	h1{
+		@include titleFormato();
+	}
+	.videos{
+		@include videosDisposicion();
+
+		.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9{
+			justify-content: space-between;
+			flex: 50%;
+
+			iframe{
+				width: 800px;
+				height: 400px;
+			}
+		}
+	}
 }
 
-iframe{
-	width: 568px;
-	height: 280px;
-}
+
 
 /*Mediaqueries Videos*/
-@media only screen and (max-width: 576px) {
+@media (min-width:360px) and (max-width:576px){
 
-	.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9{
-		flex: 100%;
-	}
-	
-	iframe{
-		width: 400px;
-		height: 250px;
-	}
+		iframe{
+			max-width: 95vw;
+		}
 }
 
-@media only screen and (max-width: 768px) {
-	.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9{
-		flex: 100%;
-	}
-	
-	iframe{
-		width: 568px;
-		height: 280px;
-	}
+@media (min-width:577px) and (max-width:992px){
+
+		iframe{
+			max-width: 95vw;
+		}
+}
+
+@media (min-width:993px) and (max-width:1400px){
+
+		iframe{
+			max-width: 95vw;
+		}
 }
