@@ -1,28 +1,194 @@
 /* Tours Page */
 
-.tourSection{
-	color: $color-font-1;
+@mixin titlesFormatos() {
+	color: $color-font-2;
+	font-family: 'bebas';
+	text-align: center;
 }
+
+@mixin tableHeadersFormatos() {
+	color: $color-font-1;
+	font-size: 25px;
+	font-family: 'bebas';
+	font-style: italic;
+	text-align: center;
+	text-decoration: underline;
+}
+
+@mixin tableBodyFormatos() {
+	color: $color-font-2;
+	font-size: 22px;
+	font-family: 'bebas';
+	text-align: center;
+}
+
+.tourSection1{
+
+	.mainTitle{
+		@include titlesFormatos();
+	}
+	.tableHeader{
+		@include tableHeadersFormatos();
+	}
+	.tableBody{
+		@include tableBodyFormatos();
+	}
+}
+
+.tourSection2{
+
+	.secondTitle{
+		@include titlesFormatos();
+	}
+	.tableHeader{
+		@include tableHeadersFormatos();
+	}
+	.tableBody{
+		@include tableBodyFormatos();
+	}
+}
+
+
+
 
 /*Mediaqueries Tours*/
 
-@media only screen and (max-width: 576px) {
+@media (min-width:360px) and (max-width:576px) {
 
-	.imgTour img{
-		height: 280px;
+	.tourSection1{
+
+		.tableHeader{
+			font-size: 15px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 13px;
+			text-align: center;
+		}
+	}
+
+	.tourSection2{
+
+		.tableHeader{
+			font-size: 15px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 13px;
+			text-align: center;
+		}
+	}
+
+	.carrusel{
+		.imgTour{
+			img{
+				height: 200px;
+			}
+		}
 	}
 }
 
-@media only screen and (max-width: 768px){
+@media (min-width:577px) and (max-width:768px) {
 
-	.imgTour img{
-		height: 350px;
+	.tourSection1{
+
+		.tableHeader{
+			font-size: 18px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+
+	.tourSection2{
+
+		.tableHeader{
+			font-size: 18px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+
+	.carrusel{
+		.imgTour{
+			img{
+				height: 300px;
+			}
+		}
 	}
 }
 
-@media only screen and (max-width: 992px){
+@media (min-width:769px) and (max-width:992px){
 
-	.imgTour img{
-		height: 450px;
+	.tourSection1{
+
+		.tableHeader{
+			font-size: 20px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+
+	.tourSection2{
+
+		.tableHeader{
+			font-size: 20px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+
+	.carrusel{
+		.imgTour{
+			img{
+				height: 400px;
+			}
+		}
+	}
+}
+
+@media (min-width:993px) and (max-width:1400px){
+
+	.tourSection1{
+
+		.tableHeader{
+			font-size: 22px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+
+	.tourSection2{
+
+		.tableHeader{
+			font-size: 22px;
+			text-align: center;
+		}
+		.tableBody{
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+
+	.carrusel{
+		.imgTour{
+			img{
+				height: 500px;
+			}
+		}
 	}
 }
